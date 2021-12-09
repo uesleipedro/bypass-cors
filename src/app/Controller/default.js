@@ -2,6 +2,11 @@ import { response } from "express";
 import fetch from "node-fetch";
 
 class Default {
+
+  async home(req, res) {
+    res.json({ message: "HomePage" });
+  }
+
   async get(req, res) {
     var params = Object.entries(req.query)
       .map(function (k) {

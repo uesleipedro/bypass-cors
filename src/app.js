@@ -26,5 +26,6 @@ app.use((req, res, next) => {
 app.get("/proxy/:urlToShorten(*)", a.get);
 app.post("/proxy/:urlToShorten(*)", a.post);
 app.put("/proxy/:urlToShorten(*)", a.put);
+app.get("/", a.home);
 
 export { app };
